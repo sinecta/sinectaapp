@@ -1,0 +1,10 @@
+<!-- <script>window.location.replace("exp://192.168.1.64:19000");</script> -->
+<script type="text/javascript">
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+
+  const redirectUrl = "sinectaapp://";
+  window.location.replace(`${redirectUrl}${params.screen}?${urlSearchParams}`);
+</script>
+
+2756
